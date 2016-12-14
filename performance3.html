@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf -8" />
+    <link rel=" stylesheet " type=" text/css " href="mef.css" />
+    <title> Wild Circus </title>
+
+</head>
+<!-- jQuery Plugin -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function () { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({
+                'overflow': 'visible'
+            });
+        })
+        //]]>
+</script>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <header>
+        <h1 class="chapeau">
+            <img src="Images/Chapeau_wild_circus.png" alt="Wild Circus LOGO" width="550px" />
+        </h1>
+    </header>
+    <div id="snow">
+    </div>
+    <nav id="global_nav">
+        <div id="imageCircus">
+            <img src="Images/circus_cirque.png" alt="Clown" width="350px" />
+        </div>
+
+        <div id="menu">
+
+            <div class="boite contact">
+                <a href="contact.html">CONTACT US</a>
+            </div>
+
+            <div class="boite performance3">
+                <a href="performance3.html">PERFORMANCE N3</a>
+            </div>
+
+            <div class="boite performance2">
+                <a href="performance2.html">PERFORMANCE N2</a>
+            </div>
+
+            <div class="boite performance1">
+                <a href="performance1.html">PERFORMANCE N1</a>
+            </div>
+
+            <div class="boite tarifs">
+                <a href="tarifs.html">PRICES</a>
+            </div>
+
+            <div class="boite accueil">
+                <a href="page.html">HOME</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="content">
+        <article id="slideshow">
+            <ul id="sContent">
+                <li><img src="Images/circus_clown.png" alt="circus clown" height="100px" /></li>
+                <li><img src="Images/circus_burn.png" alt="circus burn" height="75px" /></li>
+                <li><img src="Images/lion.png" alt="circus lion" height="100px" /></li>
+            </ul>
+        </article>
+
+        <article id="articlePerformance3">
+            <h1> THE MAGIC FLAMES !</h1>
+            <br/>
+
+            <p> Flames are truly dangerous aren't they ? Right in this show we gonna show you something incredible !</p>
+
+            <p>Mathieu's friends and even a mysterious guest are gonna jump in a hoop full of flames without any trouble or injuries ! Who is the special guest ? You have to come to see him .. or her ! </p>
+
+            <p> The admission charge for this show is 22$ for Addult, 17 for Senior and 13-18 AND free for under 12 !</p>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>This website have been created for WILD SCHOOL by Stephane Ratsimbazafy for the admission test.</p>
+
+    </footer>
+
+
+</body>
+
+</html>

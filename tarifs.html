@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf -8" />
+    <link rel=" stylesheet " type=" text/css " href="mef.css" />
+    <title> Wild Circus </title>
+
+</head>
+<!-- jQuery Plugin -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function () { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({
+                'overflow': 'visible'
+            });
+        })
+        //]]>
+</script>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <header>
+        <h1 class="chapeau">
+            <img src="Images/Chapeau_wild_circus.png" alt="Wild Circus LOGO" width="550px" />
+        </h1>
+    </header>
+    <div id="snow">
+    </div>
+    <nav id="global_nav">
+        <div id="imageCircus">
+            <img src="Images/circus_cirque.png" alt="Clown" width="350px" />
+        </div>
+
+        <div id="menu">
+
+            <div class="boite contact">
+                <a href="contact.html">CONTACT US</a>
+            </div>
+
+            <div class="boite performance3">
+                <a href="performance3.html">PERFORMANCE N3</a>
+            </div>
+
+            <div class="boite performance2">
+                <a href="performance2.html">PERFORMANCE N2</a>
+            </div>
+
+            <div class="boite performance1">
+                <a href="performance1.html">PERFORMANCE N1</a>
+            </div>
+
+            <div class="boite tarifs">
+                <a href="tarifs.html">PRICES</a>
+            </div>
+
+            <div class="boite accueil">
+                <a href="page.html">HOME</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="content">
+        <article id="slideshow">
+            <ul id="sContent">
+                <li><img src="Images/circus_clown.png" alt="circus clown" height="100px" /></li>
+                <li><img src="Images/circus_dog.png" alt="circus dog" height="100px" /></li>
+                <li><img src="Images/circus_otarie.png" alt="circus otarie" height="100px" /></li>
+            </ul>
+        </article>
+
+        <article id="articleTarifs">
+            <h1> YOU WANT TO COME ?</h1>
+            <br/>
+
+            <p> If you just want to visit us in our complex it will be 5$/person .</p>
+
+            <p>If you want to see any Performance it will cost ~25$ but they all have different price so I Suggest to click on the menu with the Show you want to see for more details or any offers . </p>
+
+            <p> Also don't forget : The circus is free for children under 12 years-old so Let them have fun during this Christmas Event !</p>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>This website have been created for WILD SCHOOL by Stephane Ratsimbazafy for the admission test.</p>
+
+    </footer>
+
+
+</body>
+
+</html>

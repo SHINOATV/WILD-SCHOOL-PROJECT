@@ -1,0 +1,306 @@
+        body {
+            background-image: linear-gradient(to left, lightgoldenrodyellow, orange 40%);
+            min-height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header img {
+            display: block;
+            margin: auto;
+        }
+        /*Image du cirque a gauche du Menu*/
+        
+        #imageCircus {
+            position: inline;
+            display: inline-block;
+            float: left;
+            margin-left: 20px;
+            text-align: center;
+        }
+        /*Font arriere du menu*/
+        
+        #menu {
+            display: inline-table;
+            width: 87%;
+        }
+        /*Definition du support texte*/
+        
+        #content {
+            border-radius: 17px;
+            padding: 20px;
+            margin-top: 20px;
+            height: 325px;
+            font-size: 23px;
+        }
+        /*Format du titre "Wild Circus"*/
+        
+        h1 {
+            font: bold;
+            margin: 15px;
+            font-size: 35;
+            text-align: center;
+        }
+        /*Animations Boite de Menu*/
+        /*Modification de la largeur lors de passage Souris*/
+        
+        .boite {
+            display: inline-block;
+            float: right;
+            height: 150px;
+            overflow: hidden;
+            width: 13%;
+            -moz-transition: width 1s;
+        }
+        /*Ajout de couleur d'arriere-plan dans les boites*/
+        
+        .boite.accueil {
+            background-color: #FBC76F;
+            border-radius: 20px 0 0 20px;
+        }
+        
+        .boite.tarifs {
+            background-color: #FFB17A;
+        }
+        
+        .boite.performance1 {
+            background-color: #EE372D;
+        }
+        
+        .boite.performance3 {
+            background-color: #FE707D;
+        }
+        
+        .boite.performance2 {
+            background-color: #FF6553;
+        }
+        
+        .boite.contact {
+            background-color: #F1BECB;
+            border-radius: 0 20px 20px 0;
+        }
+        /*Rendre toute la zone de la boite cliquable*/
+        
+        .boite a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            height: 100%;
+            display: block;
+            padding-top: 60px;
+        }
+        /*Animation des icones*/
+        
+        .boite span {
+            display: block;
+            position: relative;
+            top: 100%;
+            text-align: center;
+            -webkit-transition: top 1s;
+            -moz-transition: top 1s;
+            -o-transition: top 1s;
+            transition: top 1s;
+        }
+        /*Evenements au survol de la souris*/
+        /*Reduction des boites a 11%*/
+        
+        #menu:hover .boite {
+            width: 11%;
+        }
+        /*Aggrandissement a 45%*/
+        
+        #menu .boite:hover {
+            width: 35%;
+        }
+        
+        #slideshow {
+            position: absolute;
+            width: 285px;
+            height: 500px;
+            overflow: hidden;
+            border-width: 2px;
+            float: left;
+            margin-right: 15px;
+            border-radius: 20px;
+        }
+        
+        #content {
+            height: 240px;
+        }
+        
+        #sContent li {
+            display: inline;
+            border-width: 2px;
+        }
+        
+        #sContent img {
+            border-radius: 20px;
+        }
+        
+        #sContent {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 1000px;
+            margin: 0;
+            padding: 0;
+        }
+        /*style de la page home*/
+        
+        #articleContent {
+            background-color: #FFDCCC;
+            border-radius: 17px;
+            padding: 20px;
+            margin-top: 20px;
+            height: 300px;
+            font-size: 23px;
+        }
+        /*style de la page tarifs*/
+        
+        #articleTarifs {
+            background-color: #FFB17A;
+            border-radius: 17px;
+            padding: 20px;
+            margin-top: 20px;
+            height: 300px;
+            font-size: 23px;
+        }
+        /*style de la page contact*/
+        
+        #articleContact {
+            background-color: #F1BECB;
+            border-radius: 17px;
+            padding: 20px;
+            margin-top: 20px;
+            height: 330px;
+            font-size: 23px;
+        }
+        /*style de la page performance1*/
+        
+        #articlePerformance1 {
+            background-color: #EE372D;
+            border-radius: 17px;
+            padding: 20px;
+            margin-top: 20px;
+            height: 300px;
+            font-size: 23px;
+        }
+        /*style de la page performance2*/
+        
+        #articlePerformance2 {
+            background-color: #FF6553;
+            border-radius: 17px;
+            padding: 20px;
+            margin-top: 20px;
+            height: 300px;
+            font-size: 23px;
+        }
+        /*style de la page performance3*/
+        
+        #articlePerformance3 {
+            background-color: #FE707D;
+            border-radius: 17px;
+            padding: 20px;
+            margin-top: 20px;
+            height: 300px;
+            font-size: 23px;
+        }
+        /*style du footer*/
+        
+        .footer {
+            text-align: center;
+            font-style: italic;
+            font-size: 70%;
+            margin-top: 200px;
+            bottom: 0;
+        }
+        
+        #snow {
+            background: none;
+            font-family: Androgyne;
+            background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            -webkit-animation: snow 10s linear infinite;
+            -moz-animation: snow 10s linear infinite;
+            -ms-animation: snow 10s linear infinite;
+            animation: snow 10s linear infinite;
+            /* Empeche la div de bloquer mon menu de cirque */
+            pointer-events: none;
+        }
+        
+        @keyframes snow {
+            0% {
+                background-position: 0px 0px, 0px 0px, 0px 0px;
+            }
+            50% {
+                background-position: 500px 500px, 100px 200px, -100px 150px;
+            }
+            100% {
+                background-position: 500px 1000px, 200px 400px, -100px 300px;
+            }
+        }
+        
+        @-moz-keyframes snow {
+            0% {
+                background-position: 0px 0px, 0px 0px, 0px 0px;
+            }
+            50% {
+                background-position: 500px 500px, 100px 200px, -100px 150px;
+            }
+            100% {
+                background-position: 400px 1000px, 200px 400px, 100px 300px;
+            }
+        }
+        
+        @-webkit-keyframes snow {
+            0% {
+                background-position: 0px 0px, 0px 0px, 0px 0px;
+            }
+            50% {
+                background-position: 500px 500px, 100px 200px, -100px 150px;
+            }
+            100% {
+                background-position: 500px 1000px, 200px 400px, -100px 300px;
+            }
+        }
+        
+        @-ms-keyframes snow {
+            0% {
+                background-position: 0px 0px, 0px 0px, 0px 0px;
+            }
+            50% {
+                background-position: 500px 500px, 100px 200px, -100px 150px;
+            }
+            100% {
+                background-position: 500px 1000px, 200px 400px, -100px 300px;
+            }
+        }
+        /*JQUERY PreLoadMe */
+        
+        #preloader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 99;
+        }
+        
+        #status {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-image: url(Images/loadclown.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: -100px 0 0 -100px;
+        }
